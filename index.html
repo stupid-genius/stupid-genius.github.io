@@ -1,20 +1,30 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Apps by Stupid Genius Software</title>
-<style type="text/css">
-</style>
-<script type="text/javascript">
-</script>
+	<meta charset="UTF-8">
+	<title>Apps - Stupid Genius Software</title>
+	<link rel="stylesheet" href="styles/index.css" />
 </head>
-<body>
-	<h1>Apps</h1>
-	<ul>
-		<li><a href="http://apps.stupid-genius.com/Brotplot/">Brotplot</a> - (<a href="https://github.com/stupid-genius/Brotplot">source</a>)</li>
-		<li><a href="http://apps.stupid-genius.com/jsci/">JSCI</a> - (<a href="https://github.com/stupid-genius/jsci">source</a>)</li>
-		<li><a href="http://apps.stupid-genius.com/Quotes/">Quotes</a> - (<a href="https://github.com/stupid-genius/Quotes">source</a>)</li>
-		<li><a href="http://apps.stupid-genius.com/TruthTable/">Truth Table Generator</a> - (<a href="https://github.com/stupid-genius/TruthTable">source</a>)</li>
-	</ul>
+<body ng-app="AppModule">
+	<div id="flexbox">
+		<div id="header">
+			<h2>Apps by Stupid Genius Software</h2>
+			<h3 id="tagline">(...and other stuff)</h3>
+		</div>
+		<div id="content">
+			<div id="grid" ng-controller="GridController">
+				<div ng-repeat="app in apps track by $id(app.id)">
+					<h4><a class="appLink" href="{{app.url}}">{{app.name}}</a></h4>
+					<p class="appDescription">{{app.description}}</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			created by Stupid Genius Software
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="scripts/GridController.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lookup Tables</title>
+<style>
+body{
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+h1{
+	text-align: center;
+}
+#grid{
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#grid > div{
+	border: 1px solid;
+	font-size: small;
+	text-align: center;
+	padding: .5em;
+}
+.ascii{
+	text-align: left;
+	margin: 1em;
+}
+.character{
+	text-align: right;
+	margin: 1em;
+}
+.pressed{
+	background: yellow;
+}
+</style>
+</head>
+<body ng-app="LookupModule" ng-controller="LookupController" ng-keypress="checkKey($event)">
+	<h1>American Standard Code for Information Interchange</h1>
+	<div id="grid">
+		<div id="{{transCode($index)+1}}" ng-repeat="code in codes track by $id($index)">
+			<span class="ascii">{{codes[transCode($index)].ascii}}:</span><span class="character">{{codes[transCode($index)].character}}</span>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="scripts/LookupController.js"></script>
+</body>
+</html>

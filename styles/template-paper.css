@@ -1,0 +1,114 @@
+html, body{
+	font-family: 'LinuxLibertineORegular';
+}
+.text{
+	text-align: justify;
+	font-size: 10pt;
+}
+#article{
+}
+#frontmatter{
+	text-align: center;
+}
+#title{
+	font-size: x-large;
+}
+#subtitle{
+	font-size: large;
+}
+#author{
+}
+#body{
+	margin: 4em 0;
+	column-count: 2;
+	column-gap: 2em;
+}
+#abstract{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#abstract > h3{
+	text-align: center;
+	margin-top: 0;
+}
+#abstract > p{
+	font-style: italic;
+}
+.table{
+	text-align: center;
+}
+table{
+	width: 80%;
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+th{
+	background: lightgrey;
+}
+th, td{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 1em;
+}
+.figure{
+	text-align: center;
+}
+.figure > img{
+	width: 80%;
+	object-fit: contain;
+}
+.label{
+	font-weight: bold;
+}
+.caption{
+	font-style: italic;
+}
+.img-fl-l{
+	float: left;
+	width: 25%;
+	object-fit: contain;
+	margin: 1em;
+}
+.img-fl-r{
+	float: right;
+	width: 25%;
+	object-fit: contain;
+	margin: 1em;
+}
+.listing{
+	text-align: center;
+}
+.codeBlock{
+	width: 80%;
+	border: 1px solid;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	border: 1px solid;
+	color: white;
+	text-align: left;
+	font-size: 4pt;
+}
+.code{
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+	font-size: .75em;
+}
+.codeBlock > pre{
+	white-space: pre-wrap;
+}
+.super{
+	vertical-align: super;
+}
+#backmatter{
+}
+#footnotes{
+}
+.footnote{
+}
+#references{
+}
+.reference{
+}
