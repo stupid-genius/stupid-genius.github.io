@@ -26,7 +26,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'complex',
 		name: 'Complex Numbers',
 		description: 'A short article on the sufficiency of complex numbers, created in LaTeX.',
-		url: ''
+		url: 'https://www.pdf-archive.com/2020/05/03/complex/complex.pdf'
 	},
 	{
 		id: 'template',
