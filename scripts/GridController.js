@@ -49,25 +49,25 @@ appModule.controller('GridController', ['$scope', function($scope){
 	{
 		id: 'lens',
 		name: 'Lens effect',
-		description: 'A cool lens effect implemented in Processing.js',
+		description: 'A cool lens effect implemented in Processing.js.',
 		url: 'https://jsfiddle.net/stupid_genius/nmHL7/latest/'
 	},
 	{
 		id: 'particles',
 		name: 'Particles',
-		description: 'A particle system implmented in Processing.js',
+		description: 'A particle system implmented in Processing.js.',
 		url: 'https://jsfiddle.net/stupid_genius/4SQwT/'
 	},
 	{
 		id: 'chaosgame',
 		name: 'Chaos Game',
-		description: 'Barnsley\'s "Chaos Game" implemented in Processing.js (https://www.youtube.com/watch?v=fUsePzlOmxw)',
+		description: 'Barnsley\'s "Chaos Game" implemented in Processing.js. (https://www.youtube.com/watch?v=fUsePzlOmxw)',
 		url: 'https://jsfiddle.net/stupid_genius/45g6oj40/latest/'
 	},
 	{
 		id: 'fire',
 		name: 'Fire',
-		description: 'A vagely fire-like effect implemented in Processing.js',
+		description: 'A vagely fire-like effect implemented in Processing.js.',
 		url: 'https://jsfiddle.net/stupid_genius/wvvh7b6L/9/'
 	},
 	{
@@ -79,7 +79,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 	{
 		id: 'lookuptables',
 		name: 'Lookup Tables',
-		description: 'Lookup tables for ASCII, Unicode, etc',
+		description: 'Lookup tables for ASCII, Unicode, etc.',
 		url: 'lookup.html'
 	},
 	{
@@ -91,25 +91,25 @@ appModule.controller('GridController', ['$scope', function($scope){
 	{
 		id: 'brotplot',
 		name: 'Brotplot',
-		description: 'An elegant and unique Mandlebrot plotter',
+		description: 'An elegant and unique Mandlebrot plotter.',
 		url: 'https://apps.stupid-genius.com/Brotplot'
 	},
 	{
 		id: 'quoteng',
 		name: 'QuoteNg',
-		description: 'A minimalist UI featuring a collection of thoughts that resonate with me',
+		description: 'A minimalist UI featuring a collection of thoughts that resonate with me.',
 		url: 'https://apps.stupid-genius.com/Quotes'
 	},
 	{
 		id: 'truthtable',
 		name: 'Truth Table Generator',
-		description: 'A truth table generator',
+		description: 'A truth table generator.',
 		url: 'https://apps.stupid-genius.com/TruthTable'
 	},
 	{
 		id: 'jsci',
 		name: 'JS Compiler Interpreter',
-		description: 'An LL(1) grammar parser capable of parsing any grammar it is given',
+		description: 'An LL(1) grammar parser capable of parsing any grammar it is given.',
 		url: 'https://apps.stupid-genius.com/jsci'
 	},
 	{
@@ -121,13 +121,13 @@ appModule.controller('GridController', ['$scope', function($scope){
 	{
 		id: 'woodcarver',
 		name: 'The Woodcarver',
-		description: 'A father-daughter submission to the 2014 Indie Game Maker Contest',
+		description: 'A father-daughter submission to the 2014 Indie Game Maker Contest.  Based on story and characters by Rodger Hanson.',
 		url: 'https://stupid-genius.itch.io/'
 	},
 	{
 		id: 'mathtutor',
 		name: 'Math Tutor',
-		description: 'Simple, and effective arithmetic drills covering integers, fractions, decimals, and exponents.  Also provides randomized, printable worksheets (with answer key)',
+		description: 'Simple, and effective arithmetic drills covering integers, fractions, decimals, and exponents.  Also provides randomized, printable worksheets (with answer key).',
 		url: ''
 	},
 	{
@@ -139,7 +139,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 	{
 		id: 'float',
 		name: 'Floating point precision visualizer',
-		description: 'We all float down here',
+		description: 'We all float down here.',
 		url: ''
 	}
 	].sort(function(a,b){
