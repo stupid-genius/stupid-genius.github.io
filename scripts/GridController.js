@@ -128,7 +128,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'mathtutor',
 		name: 'Math Tutor',
 		description: 'Simple, and effective arithmetic drills covering integers, fractions, decimals, and exponents.  Also provides randomized, printable worksheets (with answer key).',
-		url: ''
+		url: 'MathTutor'
 	},
 	{
 		id: 'smashpc',
