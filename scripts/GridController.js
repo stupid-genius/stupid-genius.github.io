@@ -141,6 +141,18 @@ appModule.controller('GridController', ['$scope', function($scope){
 		name: 'Floating point precision visualizer',
 		description: 'We all float down here.',
 		url: ''
+	},
+	{
+		id: 'webterminal',
+		name: 'Web Terminal',
+		description: 'Stupid Genius CLI',
+		url: 'https://www.stupid-genius.com'
+	},
+	{
+		id: 'source',
+		name: 'Source',
+		description: 'Stupid Genius source code',
+		url: 'https://github.com/stupid-genius'
 	}
 	].sort(function(a,b){
 		return (a.name<b.name)?-1:1;

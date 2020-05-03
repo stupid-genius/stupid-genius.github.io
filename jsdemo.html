@@ -105,8 +105,6 @@
 				result = JSON.stringify(result, null, 2);
 			}
 			term.echo(result?result:'false');
-		}else{
-			term.error('eval error');
 		}
 		console.log = con;
 	}
@@ -219,7 +217,7 @@
 				<h3>2. Prototypical inheritance</h3>
 				<p>Inheritance is the concept that allows the programmer to codify the "is-a" relationship.^[2]^  JavaScript uses what's called //prototypical inheritance//.  JavaScript objects are collections of properties one of which is a reference to another JavaScript object known as that object's //prototype//.  This forms what is called the //prototype chain// and is the basis of prototypical inheritance.^[3]^</p>
 
-				<h4>2.1 Constructors are just POFO's (Plain Old Function Objects)</h4>
+				<h4>2.1 Constructors are just Plain Old Function Objects (POFO)</h4>
 				<p>JavaScript provides a number of built-in objects: Object, Array, and Function.  To be clear: JavaScript functions are full objects.  Further, an object's constructor is just a //Plain Old Function Object//.</p>
 				<section class="listing" id="2-1">
 					<div class="label">listing 2.1 Constructor</div>
