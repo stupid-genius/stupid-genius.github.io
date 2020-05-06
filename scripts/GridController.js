@@ -153,6 +153,24 @@ appModule.controller('GridController', ['$scope', function($scope){
 		name: 'Source',
 		description: 'Stupid Genius source code',
 		url: 'https://github.com/stupid-genius'
+	},
+	{
+		id: 'resume',
+		name: 'Resume',
+		description: 'My work life abridged beyond the point of usefulness.',
+		url: 'resume.html'
+	},
+	{
+		id: 'geneticPaper',
+		name: 'Genetic Algorithms',
+		description: 'Randomly Generating Well-formed Postfix Expressions.  Published in the proceedings of the 2008 Midwest Instruction and Computing Symposium.',
+		url: 'https://www.micsymposium.org/mics_2008/proceedings.pdf'
+	},
+	{
+		id: 'piracy',
+		name: 'The Costs of the Digital Piracy Culture',
+		description: 'A paper I wrote in college exploring the impact of digital piracy and "intellectual property".',
+		url: 'https://www.pdf-archive.com/2020/04/20/the-costs-of-the-digital-piracy-culture/the-costs-of-the-digital-piracy-culture.pdf'
 	}
 	].sort(function(a,b){
 		return (a.name<b.name)?-1:1;
