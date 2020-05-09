@@ -5,7 +5,7 @@ var appModule = angular.module('AppModule', []);
 appModule.controller('GridController', ['$scope', function($scope){
 	var apps = [
 	{
-		id: 'readme',
+		id: 'about',
 		name: 'About',
 		description: '',
 		url: 'README.html'
@@ -48,7 +48,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 	},
 	{
 		id: 'lens',
-		name: 'Lens effect',
+		name: 'Lens',
 		description: 'A cool lens effect implemented in Processing.js.',
 		url: 'https://jsfiddle.net/stupid_genius/nmHL7/latest/'
 	},
@@ -74,7 +74,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'walking',
 		name: 'Walking',
 		description: 'I\'m a lot less impressed with this writing now, 20+ years later.  Just putting this here for historical purposes.',
-		url: 'https://stupid-genius.com/walking.html'
+		url: 'https://gitcdn.link/repo/stupid-genius/c7650149f6373461f29cbab786dfc1df/raw/d32bca6331c2255750fcd470da265bcb5024d5e7/walking.html'
 	},
 	{
 		id: 'lookuptables',
@@ -172,6 +172,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		description: 'A paper I wrote in college exploring the impact of digital piracy and "intellectual property".',
 		url: 'https://www.pdf-archive.com/2020/04/20/the-costs-of-the-digital-piracy-culture/the-costs-of-the-digital-piracy-culture.pdf'
 	}
+	// effects demo
 	].sort(function(a,b){
 		return (a.name<b.name)?-1:1;
 	});
