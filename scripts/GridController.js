@@ -158,7 +158,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'resume',
 		name: 'Resume',
 		description: 'My work life abridged beyond the point of usefulness.',
-		url: 'resume.html'
+		url: 'https://allenng.com'
 	},
 	{
 		id: 'geneticPaper',
