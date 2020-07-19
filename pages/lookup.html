@@ -37,7 +37,8 @@ h1{
 </style>
 </head>
 <body ng-app="LookupModule" ng-controller="LookupController" ng-keypress="checkKey($event)">
-	<h1>American Standard Code for Information Interchange</h1>
+	<h1 ng-if="type=='ascii'">American Standard Code for Information Interchange</h1>
+	<h1 ng-if="type=='unicode'">Unicode</h1>
 	<div id="grid">
 		<div id="{{transCode($index)+1}}" ng-repeat="code in codes track by $id($index)">
 			<span class="ascii">{{codes[transCode($index)].ascii}}:</span><span class="character">{{codes[transCode($index)].character}}</span>
