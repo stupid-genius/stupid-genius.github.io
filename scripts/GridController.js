@@ -140,7 +140,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'float',
 		name: 'Floating point precision visualizer',
 		description: 'We all float down here.',
-		url: ''
+		url: 'float.html'
 	},
 	{
 		id: 'webterminal',
