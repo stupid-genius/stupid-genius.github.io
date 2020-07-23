@@ -38,7 +38,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'javascriptdemo',
 		name: 'Advanced Beginner JavaScript',
 		description: 'Demonstration of some advanced concepts from beginner-level JavaScript.  Prototypical inheritence and object construction.',
-		url: 'jsdemo.html'
+		url: 'https://gitcdn.link/cdn/stupid-genius/4ee163e4b8a9b0eb498d/raw/b2753a29e282becbd80fdc91f88e6c851963adea/advanced-beginner.html'
 	},
 	{
 		id: 'makingANewProgram',
@@ -140,7 +140,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'float',
 		name: 'Floating point precision visualizer',
 		description: 'We all float down here.',
-		url: ''
+		url: 'float.html'
 	},
 	{
 		id: 'webterminal',
