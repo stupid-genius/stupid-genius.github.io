@@ -19,7 +19,7 @@ floatModule.controller('FloatController', ['$scope', function($scope){
 			type: 'logarithmic'
 		},
 		series: [{
-			name: 'Floats',
+			name: 'Incrementing by 0.0000000000000001',
 			data: chartData
 		}]
 	});
@@ -133,8 +133,14 @@ floatModule.controller('FloatController', ['$scope', function($scope){
 		//show(i);
 	}
 
+	var base = 1.0;
+	var frac = 0.0;
+	var delta = 0.0000000000000001;
 	for(var i=0; i<100; ++i){
 		//make(0, 0, i);
+		var a = (base+frac-1)*100;
+		show(a);
+		frac += delta;
 	}
 
 	for(var i=308; i>=0; --i){
@@ -154,6 +160,7 @@ floatModule.controller('FloatController', ['$scope', function($scope){
 		make bits 3.9999999999999987 + 1 4503599627370493 3 2251799813685245
 		0 10000000000 1111111111111111111111111111111111111111111111111101
 	 */
+/*
 	show(3.9999999999999982);
 	show(3.9999999999999983);
 	show(3.9999999999999984);
@@ -161,7 +168,6 @@ floatModule.controller('FloatController', ['$scope', function($scope){
 	show(3.9999999999999986);
 	show(3.9999999999999987);
 
-/*
 	show(Number.MIN_VALUE);
 	make(0, -1023, 1);
 
