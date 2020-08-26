@@ -47,30 +47,6 @@ appModule.controller('GridController', ['$scope', function($scope){
 		url: 'https://www.codeproject.com/Articles/462862/Brotplot-2-0-Making-a-New-Program'
 	},
 	{
-		id: 'lens',
-		name: 'Lens',
-		description: 'A cool lens effect implemented in Processing.js.',
-		url: 'https://jsfiddle.net/stupid_genius/nmHL7/latest/'
-	},
-	{
-		id: 'particles',
-		name: 'Particles',
-		description: 'A particle system implmented in Processing.js.',
-		url: 'https://jsfiddle.net/stupid_genius/4SQwT/'
-	},
-	{
-		id: 'chaosgame',
-		name: 'Chaos Game',
-		description: 'Barnsley\'s "Chaos Game" implemented in Processing.js. (https://www.youtube.com/watch?v=fUsePzlOmxw)',
-		url: 'https://jsfiddle.net/stupid_genius/45g6oj40/latest/'
-	},
-	{
-		id: 'fire',
-		name: 'Fire',
-		description: 'A vagely fire-like effect implemented in Processing.js.',
-		url: 'https://jsfiddle.net/stupid_genius/wvvh7b6L/9/'
-	},
-	{
 		id: 'walking',
 		name: 'Walking',
 		description: 'I\'m a lot less impressed with this writing now, 20+ years later.  Just putting this here for historical purposes.',
@@ -122,7 +98,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'woodcarver',
 		name: 'The Woodcarver',
 		description: 'A father-daughter submission to the 2014 Indie Game Maker Contest.  Based on story and characters by Rodger Hanson.',
-		url: 'https://stupid-genius.itch.io/'
+		url: 'https://stupid-genius.itch.io/the-woodcarver'
 	},
 	{
 		id: 'mathtutor',
@@ -171,8 +147,13 @@ appModule.controller('GridController', ['$scope', function($scope){
 		name: 'The Costs of the Digital Piracy Culture',
 		description: 'A paper I wrote in college exploring the impact of digital piracy and "intellectual property".',
 		url: 'https://www.pdf-archive.com/2020/04/20/the-costs-of-the-digital-piracy-culture/the-costs-of-the-digital-piracy-culture.pdf'
+	},
+	{
+		id: 'laboratory',
+		name: 'Processing.js Laboratory',
+		description: 'A collection of demos implemented with Processing.js in a unified development environment.  Type `help` to get started.',
+		url: 'https://apps.stupid-genius.com/ProcessingJSLab/'
 	}
-	// effects demo
 	].sort(function(a,b){
 		return (a.name<b.name)?-1:1;
 	});

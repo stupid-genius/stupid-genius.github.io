@@ -65,6 +65,7 @@ floatModule.controller('FloatController', ['$scope', function($scope){
 	}
 	function display(){
 		term.echo(parseFloat64(view));
+		// idea x-axis is .0000000000001 increments
 		chartData.push([chartData.length, view.getFloat64(0)]);
 	}
 	function plot(){
