@@ -11,16 +11,14 @@
 			<h2>Apps by Stupid Genius Software</h2>
 			<h3 id="tagline">(...and other stuff)</h3>
 		</div>
-		<div id="content">
-			<div id="grid" ng-controller="GridController">
-				<div ng-repeat="app in apps track by $id(app.id)">
-					<h4><a class="appLink" href="{{app.url}}" target="_blank">{{app.name}}</a></h4>
-					<p class="appDescription">{{app.description}}</p>
-				</div>
+		<div id="content" ng-controller="GridController">
+			<div ng-repeat="app in apps track by $id(app.id)">
+				<h4><a class="appLink" href="{{app.url}}" target="_blank">{{app.name}}</a></h4>
+				<p class="appDescription">{{app.description}}</p>
 			</div>
 		</div>
 		<div id="footer">
-			created by Stupid Genius Software
+			created by <a href="https://github.com/stupid-genius">Stupid Genius Software</a>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
