@@ -119,12 +119,6 @@ appModule.controller('GridController', ['$scope', function($scope){
 		url: 'https://www.stupid-genius.com'
 	},
 	{
-		id: 'source',
-		name: 'Source',
-		description: 'Stupid Genius source code',
-		url: 'https://github.com/stupid-genius'
-	},
-	{
 		id: 'resume',
 		name: 'Resume',
 		description: 'My work life abridged beyond the point of usefulness.',

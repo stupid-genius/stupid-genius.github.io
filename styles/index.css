@@ -17,12 +17,8 @@ html, body{
   min-height: 100%;
 }
 #header{
-	display: flex;
-	flex: 0 0 auto;
+	flex: 1 1 auto;
 	flex-direction: column;
-	position: fixed;
-	left: 0;
-	top: 0;
 	height: 100px;
 	width: 100%;
 	border-bottom: 1px solid;
@@ -31,12 +27,8 @@ html, body{
 	border-color: #B3FA25;
 }
 #footer{
-	display: flex;
-	flex: 0 0 auto;
+	flex: 1 1 auto;
 	flex-direction: column;
-	position: fixed;
-	left: 0;
-	bottom: 0;
 	height: 50px;
 	width: 100%;
 	text-align: center;
@@ -46,18 +38,17 @@ html, body{
 	border-color: #B3FA25;
 }
 #content{
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	padding: calc(100px + 1em) 1em;
-	background: #111;
-}
-#grid{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 236px);
 	grid-gap: 1rem;
+	flex: 2 1 auto;
+	flex-direction: column;
+	padding: 1em;
+	background: #111;
 }
-#grid > div{
+#grid{
+}
+#content > div{
 	height: 200px;
 	border: 2px solid;
 	border-radius: 8px;
@@ -65,8 +56,8 @@ html, body{
 	padding: 1em;
 	background: black;
 }
-a.appLink:link,
-a.appLink:visited{
+a:link,
+a:visited{
 	color: #B3FA25;
 }
 .appDescription{
