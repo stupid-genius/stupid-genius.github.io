@@ -41,7 +41,8 @@ module.exports = function(grunt){
 						dest: 'build/',
 						src: [
 							'styles/**',
-							'scripts/**'
+							'scripts/**',
+							'images/**'
 						]
 					},
 					{

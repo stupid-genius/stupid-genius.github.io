@@ -11,12 +11,6 @@ appModule.controller('GridController', ['$scope', function($scope){
 		url: 'README.html'
 	},
 	{
-		id: 'privacy',
-		name: 'Privacy',
-		description: '',
-		url: 'privacy.html'
-	},
-	{
 		id: 'boxmodel',
 		name: 'CSS Box Model',
 		description: 'Demonstration document exploring the basics of the CSS Box Model.  Make sure to read the page source.',
@@ -62,7 +56,7 @@ appModule.controller('GridController', ['$scope', function($scope){
 		id: 'hypnotoad',
 		name: 'Hypnotoad',
 		description: 'All hail the HYPNOTOAD!',
-		url: ''
+		url: 'hypnotoad.html'
 	},
 	{
 		id: 'brotplot',
