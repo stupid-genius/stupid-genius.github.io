@@ -40,12 +40,12 @@ appModule.controller('GridController', ['$scope', function($scope){
 		description: 'An article I wrote about developing my Mandelbrot plotter.',
 		url: 'https://www.codeproject.com/Articles/462862/Brotplot-2-0-Making-a-New-Program'
 	},
-	{
+	/*{
 		id: 'walking',
 		name: 'Walking',
 		description: 'I\'m a lot less impressed with this writing now, 20+ years later.  Just putting this here for historical purposes.',
 		url: 'https://gitcdn.link/repo/stupid-genius/c7650149f6373461f29cbab786dfc1df/raw/d32bca6331c2255750fcd470da265bcb5024d5e7/walking.html'
-	},
+	},*/
 	{
 		id: 'lookuptables',
 		name: 'Lookup Tables',

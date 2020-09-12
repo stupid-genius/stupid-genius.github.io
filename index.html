@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<base target="_blank">
 	<title>Apps - Stupid Genius Software</title>
 	<link rel="stylesheet" href="styles/index.css" />
 </head>
 <body ng-app="AppModule">
 	<div id="flexbox">
 		<div id="header">
-			<h2>Apps by Stupid Genius Software</h2>
-			<h3 id="tagline">(...and other stuff)</h3>
+			<h1>Apps by Stupid Genius Software</h1>
+			<h2 id="tagline">(...and other stuff)</h2>
 		</div>
 		<div id="content" ng-controller="GridController">
 			<div ng-repeat="app in apps track by $id(app.id)">
-				<h4><a class="appLink" href="{{app.url}}" target="_blank">{{app.name}}</a></h4>
+				<h3><a class="appLink" href="{{app.url}}" target="_blank">{{app.name}}</a></h3>
 				<p class="appDescription">{{app.description}}</p>
 			</div>
 		</div>
 		<div id="footer">
-			created by <a href="https://github.com/stupid-genius">Stupid Genius Software</a>
+			<a href="https://tilde.club/~stupidgenius/">~</a>created by <a href="https://github.com/stupid-genius">Stupid Genius Software</a>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>

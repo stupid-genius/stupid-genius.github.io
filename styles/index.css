@@ -5,6 +5,15 @@ html, body{
 	color: #0FEE0F;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+a:link,
+a:visited{
+	font-size: 16px;
+	text-decoration: none;
+	color: #B3FA25;
+}
+.appDescription{
+	font-size: small;
+}
 #tagline{
 	color: #B3FA25;
 	font-size: medium;
@@ -18,13 +27,34 @@ html, body{
 }
 #header{
 	flex: 1 1 auto;
+	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	height: 100px;
 	width: 100%;
 	border-bottom: 1px solid;
 	text-align: center;
 	background: black;
 	border-color: #B3FA25;
+}
+#header > h1{
+	margin: .5em auto;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 10px solid #0FEE0F;
+	animation:
+		typing 3.5s steps(30, end),
+		cursor 1s step-end infinite;
+}
+@keyframes typing{
+	from{ width: 0; }
+	to{ width: 491px; }
+}
+@keyframes cursor{
+	from, to { border-color: transparent; }
+	50% { border-color: #0FEE0F; }
 }
 #footer{
 	flex: 1 1 auto;
@@ -55,11 +85,4 @@ html, body{
 	border-color: #990808;
 	padding: 1em;
 	background: black;
-}
-a:link,
-a:visited{
-	color: #B3FA25;
-}
-.appDescription{
-	font-size: small;
 }
